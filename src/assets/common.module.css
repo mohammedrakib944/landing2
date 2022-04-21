@@ -1,0 +1,19 @@
+.gradientBtn {
+  background: linear-gradient(90deg, var(--blue), var(--pink), var(--violent));
+  padding: 10px 30px;
+  color: var(--fontWhite) !important;
+  border-radius: 30px;
+  font-weight: 600;
+}
+.gradientBtn i {
+  margin-right: 15px;
+  font-size: 12px;
+}
+.gradientText {
+  width: fit-content;
+  background: linear-gradient(90deg, var(--blue), var(--pink), var(--violent));
+  font-weight: 900;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}

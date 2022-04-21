@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+
+:root {
+  --blue: #0b8cff;
+  --pink: #f0187a;
+  --violent: #ac09c3;
+  --fontWhite: rgb(245, 245, 245);
+  --fontColor: rgb(100, 100, 100);
+  --fontSize: 1rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+}
+.active {
+  color: var(--blue) !important;
+}
