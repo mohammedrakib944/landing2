@@ -3,10 +3,13 @@ import style from "../../assets/common.module.css";
 import Navigation from "../../components/navigation/Navigation";
 import img from "../../assets/img/dummy.jpg";
 import Properties from "../../components/properties/Properties";
+import Faq from "../../components/faq/Faq";
 
 // pages
 import Metaverse from "../metaverse/Metaverse";
 import Roadmap from "../roadmap/Roadmap";
+import Team from "../team/Team";
+import Footer from "../../components/footer/Footer";
 
 const Landing = () => {
   return (
@@ -95,10 +98,41 @@ const Landing = () => {
       {/* roadmap */}
       <Roadmap />
 
+      {/* video section is here */}
+      <div className="videoSection">{/* <h2>Video section</h2> */}</div>
       {/* propertties */}
-      <div className="container">
-        <Properties />
+      {/* <div className="container"> */}
+      <h2 className={style.gradientText} id="PropertiesId">
+        LATEST ADDED PROPERTIES
+      </h2>
+      <div className="propertiesSection">
+        <Properties title={"lorem ipsum"} />
+        <Properties title={"lorem ipsum"} />
+        <Properties title={"lorem ipsum"} />
+        <Properties title={"lorem ipsum"} />
+        <Properties title={"lorem ipsum"} />
       </div>
+      {/* </div> */}
+      {/* Team */}
+      <Team />
+
+      {/* FAQ */}
+      <div className="container">
+        <div className="FAQSection">
+          <br />
+          <h5 className={style.barTitle}>FAQ</h5>
+          <br />
+          <h2 className={style.gradientText} style={{ margin: "0 auto" }}>
+            FREQUENTLY ASKED QUESTIONS
+          </h2>
+          <br />
+          <Faq />
+          {/* bootstraps */}
+        </div>
+      </div>
+      <br />
+      <br />
+      <Footer />
     </div>
   );
 };

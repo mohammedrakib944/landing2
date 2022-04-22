@@ -1,0 +1,20 @@
+.customBtnLink {
+  text-decoration: none !important;
+  font-size: 1.3rem !important;
+  font-weight: 900 !important;
+  margin: 10px 0 !important;
+  color: var(--fontColor2) !important;
+}
+.card-header {
+  background-color: white !important;
+}
+.customBtnLink:focus {
+  outline: none !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.collapsText {
+  font-size: 1.2rem !important;
+  color: var(--fontColor) !important;
+}

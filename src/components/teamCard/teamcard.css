@@ -1,0 +1,33 @@
+.teamCard {
+  width: 100%;
+  text-align: center;
+}
+
+.teamCard img {
+  width: 100%;
+}
+
+.teamCard h2 {
+  margin-top: 20px;
+  font-size: 1.3rem;
+  font-weight: 900;
+}
+.teamCard h5 {
+  color: var(--fontColor);
+}
+
+.teamLinks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 0;
+  font-size: 1.3rem;
+}
+.teamLinks li {
+  list-style: none;
+  padding: 10px;
+}
+.teamLinks a {
+  text-decoration: none;
+  color: var(--fontColor);
+}
