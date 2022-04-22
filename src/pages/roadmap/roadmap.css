@@ -1,0 +1,17 @@
+.roadmap {
+  text-align: center;
+  margin: 70px 0;
+}
+.roadmap h2 {
+  margin: 0 auto;
+  padding: 10px;
+}
+.roadmap p {
+  color: var(--fontColor);
+  font-size: var(--fontSize2);
+}
+.roadmapGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 60px;
+}

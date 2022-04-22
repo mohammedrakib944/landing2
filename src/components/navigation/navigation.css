@@ -1,5 +1,11 @@
 .navigation {
-  padding: 20px 0;
+  width: 100%;
+  position: fixed;
+  padding: 12px 0;
+  background: white;
+  border-bottom: 1px solid #dddddd5e;
+  box-shadow: 0px 0px 10px #00000012;
+  z-index: 1000;
 }
 .navlinks {
   display: flex;
@@ -16,4 +22,7 @@
   font-size: var(--fontSize);
   font-weight: 600;
   color: var(--fontColor);
+}
+
+@media only screen and (max-width: 767px) {
 }

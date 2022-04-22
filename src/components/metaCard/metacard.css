@@ -1,0 +1,26 @@
+.metaCard {
+  border-radius: 20px;
+  padding: 15px 20px;
+  margin-top: 20px;
+  border: 2px solid transparent;
+  transition: 0.3s;
+}
+.metaCard:hover {
+  border: 2px solid var(--violent);
+}
+.metaTitle {
+  font-size: var(--fontSize2);
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.metaTitle i {
+  font-size: 1.4rem;
+  color: var(--blue);
+  padding-right: 10px;
+}
+.metaCard p {
+  text-transform: capitalize;
+  font-size: var(--fontSize);
+  font-weight: 500;
+  margin-bottom: 0;
+}

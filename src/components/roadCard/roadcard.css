@@ -1,0 +1,30 @@
+.roadCard {
+  text-align: center;
+  width: 100%;
+}
+.roadCradTitle {
+  font-weight: 800;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+.percent {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+  background: rgb(153, 153, 153);
+  transform: rotate(45deg);
+  margin-bottom: 20px !important;
+}
+.percent p {
+  color: white !important;
+  font-size: 1.2rem !important;
+  font-weight: 700 !important;
+  padding-top: 5px;
+  margin-top: 12px;
+  transform: rotate(-45deg) !important;
+}
+
+.roadCard p {
+  font-size: var(--fontSize);
+  color: var(--fontColor);
+}

@@ -1,0 +1,29 @@
+.metaverse {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  background: rgba(223, 215, 215, 0.418);
+  clip-path: polygon(100% 0%, 100% 90%, 0% 100%, 0% 10%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.metaImgs {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+.metaImg {
+  width: 100%;
+  background: linear-gradient(90deg, var(--blue), var(--pink), var(--violent));
+  border-radius: 35px;
+  padding: 4px;
+}
+.MetaMainImg {
+  grid-column: 1/-1;
+}
+
+.metaverseRight {
+  text-align: left;
+}
