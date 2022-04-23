@@ -11,9 +11,10 @@
   width: 80px;
   height: 80px;
   margin: 0 auto;
-  background: rgb(153, 153, 153);
+  background: linear-gradient(45deg, var(--violent), var(--pink));
   transform: rotate(45deg);
   margin-bottom: 20px !important;
+  border-radius: 5px;
 }
 .percent p {
   color: white !important;
@@ -27,4 +28,13 @@
 .roadCard p {
   font-size: var(--fontSize);
   color: var(--fontColor);
+}
+
+@media only screen and (max-width: 768px) {
+  .roadCard {
+    margin-bottom: 28px;
+    border: 1px solid var(--violent);
+    border-radius: 10px;
+    padding: 0 15px;
+  }
 }

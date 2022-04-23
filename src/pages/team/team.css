@@ -1,6 +1,6 @@
 .TeamWrapper {
   width: 100%;
-  height: 125vh;
+  min-height: 125vh;
   text-align: center;
   background: rgba(223, 215, 215, 0.418);
   clip-path: polygon(100% 0%, 100% 90%, 0% 100%, 0% 10%);
@@ -13,4 +13,15 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .TeamWrapper {
+    padding: 100px 0;
+    clip-path: polygon(100% 0%, 100% 98%, 0% 100%, 0% 2%) !important;
+    margin-top: 80px;
+  }
+  .teamGrid {
+    display: inherit;
+  }
 }

@@ -13,7 +13,7 @@ import Footer from "../../components/footer/Footer";
 
 const Landing = () => {
   return (
-    <div>
+    <>
       <Navigation />
       <div className="landing">
         <div className="container">
@@ -100,8 +100,8 @@ const Landing = () => {
 
       {/* video section is here */}
       <div className="videoSection">{/* <h2>Video section</h2> */}</div>
+
       {/* propertties */}
-      {/* <div className="container"> */}
       <h2 className={style.gradientText} id="PropertiesId">
         LATEST ADDED PROPERTIES
       </h2>
@@ -133,7 +133,7 @@ const Landing = () => {
       <br />
       <br />
       <Footer />
-    </div>
+    </>
   );
 };
 

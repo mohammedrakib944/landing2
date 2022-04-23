@@ -1,3 +1,8 @@
+.showMenuButton,
+.responseiveLogo {
+  display: none;
+}
+
 .navigation {
   width: 100%;
   position: fixed;
@@ -6,6 +11,9 @@
   border-bottom: 1px solid #dddddd5e;
   box-shadow: 0px 0px 10px #00000012;
   z-index: 1000;
+}
+.closeSpan {
+  display: none;
 }
 .navlinks {
   display: flex;
@@ -24,5 +32,55 @@
   color: var(--fontColor);
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 768px) {
+  .responseiveLogo {
+    display: block;
+    position: absolute;
+    margin: 13px 40px;
+  }
+  .showMenuButton {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 1.4rem;
+    position: absolute;
+    margin: 20px;
+  }
+  .responseiveLogo {
+    padding: 10px;
+  }
+  .navigation {
+    display: none;
+    background: rgb(255, 255, 255);
+    position: fixed;
+    width: 65%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+  }
+  .toggleNav {
+    display: block !important;
+  }
+  .navlinks {
+    flex-direction: column;
+    padding-left: initial;
+  }
+  .navlinks li {
+    list-style: none;
+    width: 100%;
+    border-bottom: 1px solid rgb(221 221 221 / 37%);
+    padding: 15px;
+    text-align: center;
+    margin-left: initial;
+  }
+  .closeSpan {
+    display: block;
+    position: fixed;
+    width: 35%;
+    height: 100vh;
+    background: rgb(34 34 34 / 44%);
+    right: 0;
+    top: 0;
+    backdrop-filter: blur(2px);
+  }
 }

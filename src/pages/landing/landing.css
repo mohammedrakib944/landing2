@@ -72,6 +72,7 @@
 /* headline */
 .headline {
   width: 100%;
+  height: 57px;
   position: absolute;
   background: linear-gradient(90deg, var(--blue), var(--pink), var(--violent));
   overflow: hidden;
@@ -151,4 +152,49 @@
 #PropertiesId {
   margin: 0 auto;
   padding: 50px 0 30px 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .landingContent {
+    margin-left: 0;
+  }
+  .landingContent h1 {
+    font-size: 2.5rem;
+  }
+  .landingContent p {
+    width: 100%;
+  }
+  .customLandingBtn {
+    padding: 8px 20px;
+    font-size: 14px;
+    font-weight: 700;
+  }
+  .downArrow span {
+    margin-left: -6%;
+  }
+  .LandingSocialLinks {
+    height: initial;
+    padding-left: 0;
+    flex-direction: row;
+  }
+  .LandingSocialLinks li {
+    padding: 5px 10px;
+  }
+  .aboutWrapper {
+    margin-top: 80px;
+  }
+  .aboutContent p {
+    width: 100%;
+  }
+  .aboutImages {
+    display: inherit;
+  }
+  .aboutImage {
+    padding: 2px;
+    margin-top: 12px;
+  }
+  /* properties section */
+  .propertiesSection {
+    display: inherit;
+  }
 }

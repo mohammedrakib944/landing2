@@ -26,3 +26,9 @@
   font-size: 2.5rem;
   padding: 10px 10px;
 }
+
+@media only screen and (max-width: 768px) {
+  .footerLinks li {
+    padding: 6px 10px;
+  }
+}

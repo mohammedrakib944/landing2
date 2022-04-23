@@ -24,3 +24,11 @@
   font-weight: 500;
   margin-bottom: 0;
 }
+
+@media only screen and (max-width: 768px) {
+  .metaCard {
+    border: 2px solid rgb(186 115 198 / 49%);
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+}

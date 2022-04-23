@@ -25,3 +25,10 @@
   font-size: 1.3rem;
   color: var(--fontColor2);
 }
+
+@media only screen and (max-width: 768px) {
+  .properties {
+    position: relative;
+    margin-bottom: 25px;
+  }
+}

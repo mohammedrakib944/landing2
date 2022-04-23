@@ -27,3 +27,20 @@
 .metaverseRight {
   text-align: left;
 }
+
+@media only screen and (max-width: 768px) {
+  .metaverse {
+    height: 170vh;
+    clip-path: polygon(100% 0%, 100% 97%, 0% 100%, 0% 3%);
+  }
+  .metaImg {
+    border-radius: 10px;
+    padding: 2px;
+  }
+  .metaImgs {
+    grid-gap: 5px;
+  }
+  .metaverseRight {
+    padding: 30px 0;
+  }
+}

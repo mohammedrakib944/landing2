@@ -17,6 +17,7 @@
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+  margin: 2px;
 }
 
 /* bar title */
@@ -43,4 +44,16 @@
   background-color: var(--fontColor);
   top: 52%;
   right: 39%;
+}
+@media only screen and (max-width: 768px) {
+  .gradientBtn {
+    padding: 9px 25px;
+    font-size: 14px;
+  }
+  .barTitle::before {
+    left: 12%;
+  }
+  .barTitle::after {
+    right: 12%;
+  }
 }
