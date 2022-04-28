@@ -1,9 +1,17 @@
 import { useState } from "react";
 import "./navigation.css";
 import style from "../../assets/common.module.css";
+import { NavLink } from "react-router-dom";
 
 const Navigation = () => {
   const [toggleNav, setToggleNav] = useState("");
+
+  window.onscroll = function () {
+    const navi = document.querySelector(".navigation");
+    let height = window.pageYOffset;
+    if (height >= 100) navi.classList.add("secondNav");
+    else navi.classList.remove("secondNav");
+  };
 
   return (
     <>
@@ -31,9 +39,7 @@ const Navigation = () => {
             <div className="col-md-5">
               <ul className="navlinks">
                 <li>
-                  <a href="#" className="active">
-                    Home
-                  </a>
+                  <NavLink to="/">Home</NavLink>
                 </li>
                 <li>
                   <a href="#">About</a>
@@ -52,10 +58,10 @@ const Navigation = () => {
             <div className="col-md-5">
               <ul className="navlinks">
                 <li>
-                  <a href="#">Login</a>
+                  <NavLink to="/login">Login</NavLink>
                 </li>
                 <li>
-                  <a href="#">Signup</a>
+                  <NavLink to="/signup">Signup</NavLink>
                 </li>
                 <li>
                   <a href="#" className={style.gradientBtn}>

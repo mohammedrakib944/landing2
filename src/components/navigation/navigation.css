@@ -7,10 +7,12 @@
   width: 100%;
   position: fixed;
   padding: 12px 0;
+  z-index: 1000;
+}
+.secondNav {
   background: white;
   border-bottom: 1px solid #dddddd5e;
   box-shadow: 0px 0px 10px #00000012;
-  z-index: 1000;
 }
 .closeSpan {
   display: none;
@@ -18,7 +20,7 @@
 .navlinks {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   height: 100%;
 }
 .navlinks li {

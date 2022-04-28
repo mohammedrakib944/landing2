@@ -1,15 +1,15 @@
 import "./properties.css";
 import img from "../../assets/img/dummy.jpg";
 
-const Properties = () => {
+const Properties = ({ data }) => {
   return (
     <div className="properties">
-      <img src={img} />
+      <img src={data.img} />
       <div className="titleAndTile">
-        <p>2 bedroom</p>
-        <p>5 min ago</p>
+        <p>{data.qu}</p>
+        <p>{data.time}</p>
       </div>
-      <h3>LOREM IPSUM</h3>
+      <h3>{data.title}</h3>
     </div>
   );
 };

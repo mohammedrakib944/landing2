@@ -1,9 +1,12 @@
 import "./landing.css";
 import style from "../../assets/common.module.css";
 import Navigation from "../../components/navigation/Navigation";
-import img from "../../assets/img/dummy.jpg";
+import img1 from "../../assets/img/img 1.jpg";
+import img2 from "../../assets/img/img 2.jpg";
+import img3 from "../../assets/img/img 3.jpg";
 import Properties from "../../components/properties/Properties";
 import Faq from "../../components/faq/Faq";
+import { propertiesData } from "./Properties";
 
 // pages
 import Metaverse from "../metaverse/Metaverse";
@@ -65,6 +68,8 @@ const Landing = () => {
           MARCH{" "}
         </h4>
       </div>
+
+      {/* about section */}
       <div className="about">
         <div className="container">
           <div className="aboutWrapper">
@@ -80,9 +85,9 @@ const Landing = () => {
               </p>
             </div>
             <div className="aboutImages">
-              <img src={img} className="aboutImage" />
-              <img src={img} className="aboutImage" />
-              <img src={img} className="aboutImage" />
+              <img src={img1} className="aboutImage" />
+              <img src={img2} className="aboutImage" />
+              <img src={img3} className="aboutImage" />
             </div>
             <p className="mt-4">Join The Lorem Ispum NFT</p>
             <button className={`${style.gradientBtn} mb-5`}>
@@ -98,19 +103,14 @@ const Landing = () => {
       {/* roadmap */}
       <Roadmap />
 
-      {/* video section is here */}
-      <div className="videoSection">{/* <h2>Video section</h2> */}</div>
-
       {/* propertties */}
       <h2 className={style.gradientText} id="PropertiesId">
         LATEST ADDED PROPERTIES
       </h2>
       <div className="propertiesSection">
-        <Properties title={"lorem ipsum"} />
-        <Properties title={"lorem ipsum"} />
-        <Properties title={"lorem ipsum"} />
-        <Properties title={"lorem ipsum"} />
-        <Properties title={"lorem ipsum"} />
+        {propertiesData.map((data, index) => (
+          <Properties key={index} data={data} />
+        ))}
       </div>
       {/* </div> */}
       {/* Team */}

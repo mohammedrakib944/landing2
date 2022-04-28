@@ -12,13 +12,13 @@
   width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
+  /* grid-gap: 20px; */
 }
 .metaImg {
   width: 100%;
-  background: linear-gradient(90deg, var(--blue), var(--pink), var(--violent));
+  /* background: linear-gradient(90deg, var(--blue), var(--pink), var(--violent)); */
   border-radius: 35px;
-  padding: 4px;
+  /* padding: 4px; */
 }
 .MetaMainImg {
   grid-column: 1/-1;

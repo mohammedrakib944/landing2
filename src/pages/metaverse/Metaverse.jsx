@@ -1,6 +1,10 @@
 import "./metaverse.css";
 import MetaCard from "../../components/metaCard/MetaCard";
-import img from "../../assets/img/dummy.jpg";
+import img1 from "../../assets/img/img 17.png";
+import img2 from "../../assets/img/img 18.png";
+import img3 from "../../assets/img/img 19.png";
+import img4 from "../../assets/img/image 14.png";
+
 import style from "../../assets/common.module.css";
 import { metaData } from "./metaData";
 
@@ -11,10 +15,10 @@ const Metaverse = () => {
         <div className="row">
           <div className="col-md-6">
             <div className="metaImgs">
-              <img src={img} className="metaImg MetaMainImg" />
-              <img src={img} className="metaImg" />
-              <img src={img} className="metaImg" />
-              <img src={img} className="metaImg" />
+              <img src={img1} className="metaImg MetaMainImg" />
+              <img src={img2} className="metaImg" />
+              <img src={img3} className="metaImg" />
+              <img src={img4} className="metaImg" />
             </div>
           </div>
           <div className="col-md-6">
