@@ -45,6 +45,14 @@
   top: 52%;
   right: 39%;
 }
+@media only screen and (max-width: 1400px) {
+  .barTitle::before {
+    left: 37%;
+  }
+  .barTitle::after {
+    right: 37%;
+  }
+}
 @media only screen and (max-width: 768px) {
   .gradientBtn {
     padding: 9px 25px;

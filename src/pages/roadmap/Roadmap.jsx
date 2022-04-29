@@ -1,10 +1,16 @@
+// external import
+import VideoPlayer from "react-video-js-player";
+
+// inernal imports
 import "./roadmap.css";
 import style from "../../assets/common.module.css";
 import RoadCard from "../../components/roadCard/RoadCard";
 import { roadmapData } from "./roadmapData";
-import videoBG from "../../assets/img/img 6.png";
 import videoCircle from "../../assets/img/img 15.png";
 import videoTriangle from "../../assets/img/img 8.png";
+
+import Video from "../../assets/video/bg.mp4";
+import VideoPoster from "../../assets/img/img 6.png";
 
 const Roadmap = () => {
   return (
@@ -27,13 +33,15 @@ const Roadmap = () => {
         </div>
       </div>
 
+      {/* video section */}
       <br />
       <div className="videoImage">
-        <img className="videoBG" src={videoBG} />
+        {/* <img className="videoBG" src="" />
         <div className="videoPlay">
           <img src={videoCircle} />
           <img className="videoTriangle" src={videoTriangle} />
-        </div>
+        </div> */}
+        <VideoPlayer src={Video} poster={VideoPoster} />
       </div>
       <br />
     </>

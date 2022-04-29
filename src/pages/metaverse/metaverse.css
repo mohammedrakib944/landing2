@@ -12,13 +12,11 @@
   width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /* grid-gap: 20px; */
 }
 .metaImg {
   width: 100%;
-  /* background: linear-gradient(90deg, var(--blue), var(--pink), var(--violent)); */
   border-radius: 35px;
-  /* padding: 4px; */
+  cursor: pointer;
 }
 .MetaMainImg {
   grid-column: 1/-1;
@@ -26,6 +24,13 @@
 
 .metaverseRight {
   text-align: left;
+}
+
+@media only screen and (max-width: 1400px) {
+  .metaverse {
+    height: 120vh;
+    clip-path: polygon(100% 0%, 100% 95%, 0% 100%, 0% 5%);
+  }
 }
 
 @media only screen and (max-width: 768px) {
