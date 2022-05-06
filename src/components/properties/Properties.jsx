@@ -1,5 +1,7 @@
 import "./properties.css";
 import img from "../../assets/img/dummy.jpg";
+import React from "react";
+
 
 const Properties = ({ data }) => {
   return (

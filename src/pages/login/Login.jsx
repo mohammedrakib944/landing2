@@ -1,8 +1,10 @@
-import "./login.css";
-import Navigation from "../../components/navigation/Navigation";
-import Input from "../../components/input/Input";
-import bg from "../../assets/img/img 7.png";
+import React from "react";
 import style from "../../assets/common.module.css";
+import bg from "../../assets/img/img 7.png";
+import Input from "../../components/input/Input";
+import Navigation from "../../components/navigation/Navigation";
+import "./login.css";
+
 
 function Login() {
   return (

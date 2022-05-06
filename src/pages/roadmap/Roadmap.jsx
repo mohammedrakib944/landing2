@@ -1,16 +1,15 @@
 // external import
+import React from "react";
 import VideoPlayer from "react-video-js-player";
-
+import style from "../../assets/common.module.css";
+import VideoPoster from "../../assets/img/img 6.png";
+import Video from "../../assets/video/bg.mp4";
+import RoadCard from "../../components/roadCard/RoadCard";
 // inernal imports
 import "./roadmap.css";
-import style from "../../assets/common.module.css";
-import RoadCard from "../../components/roadCard/RoadCard";
 import { roadmapData } from "./roadmapData";
-import videoCircle from "../../assets/img/img 15.png";
-import videoTriangle from "../../assets/img/img 8.png";
 
-import Video from "../../assets/video/bg.mp4";
-import VideoPoster from "../../assets/img/img 6.png";
+
 
 const Roadmap = () => {
   return (

@@ -1,17 +1,17 @@
-import { useState } from "react";
-import "./metaverse.css";
-import MetaCard from "../../components/metaCard/MetaCard";
-import img1 from "../../assets/img/img 17.png";
-import img2 from "../../assets/img/img 18.png";
-import img3 from "../../assets/img/img 19.png";
+import React, { useState } from "react";
+import style from "../../assets/common.module.css";
 import img4 from "../../assets/img/image 14.png";
-
 import img12 from "../../assets/img/img 12.png";
 import img13 from "../../assets/img/img 13.png";
 import img14 from "../../assets/img/img 14.png";
-
-import style from "../../assets/common.module.css";
+import img1 from "../../assets/img/img 17.png";
+import img2 from "../../assets/img/img 18.png";
+import img3 from "../../assets/img/img 19.png";
+import MetaCard from "../../components/metaCard/MetaCard";
 import { metaData } from "./metaData";
+import "./metaverse.css";
+
+
 
 const Metaverse = () => {
   const [imgB, setImgB] = useState(img1);

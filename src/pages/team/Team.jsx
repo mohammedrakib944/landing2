@@ -1,7 +1,9 @@
+import React from "react";
+import style from "../../assets/common.module.css";
 import TeamCard from "../../components/teamCard/TeamCard";
 import "./team.css";
 import { teamData } from "./teamData";
-import style from "../../assets/common.module.css";
+
 
 const Team = () => {
   return (

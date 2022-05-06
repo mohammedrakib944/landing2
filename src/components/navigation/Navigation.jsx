@@ -1,7 +1,19 @@
-import { useState } from "react";
-import "./navigation.css";
-import style from "../../assets/common.module.css";
+import { ethers } from "ethers";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
+import style from "../../assets/common.module.css";
+import "./navigation.css";
+
+const provider = new ethers.providers.Web3Provider(window.ethereum)
+let signer
+
+const connectMetamask = async () => {
+  await provider.send("eth_requestAccounts", [])
+  signer = await provider.getSigner()
+  const balance = await signer.getBalance()
+  console.log("Account address:", await signer.getAddress())
+  console.log("Account balance:", await ethers.utils.formatEther(balance))
+}
 
 const Navigation = () => {
   const [toggleNav, setToggleNav] = useState("");
@@ -12,6 +24,7 @@ const Navigation = () => {
     if (height >= 100) navi.classList.add("secondNav");
     else navi.classList.remove("secondNav");
   };
+
 
   return (
     <>
@@ -64,10 +77,10 @@ const Navigation = () => {
                   <NavLink to="/signup">Signup</NavLink>
                 </li>
                 <li>
-                  <a href="#" className={style.gradientBtn}>
+                  <button onClick={connectMetamask} type="button" className={style.gradientBtn}>
                     <i className="fa-solid fa-arrow-down"></i>
                     METAMASK
-                  </a>
+                  </button>
                 </li>
               </ul>
             </div>

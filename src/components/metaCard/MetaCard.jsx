@@ -1,4 +1,6 @@
+import React from "react";
 import "./metacard.css";
+
 
 const MetaCard = (props) => {
   const { data } = props;

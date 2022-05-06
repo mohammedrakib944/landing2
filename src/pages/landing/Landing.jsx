@@ -1,18 +1,20 @@
-import "./landing.css";
+import React from "react";
 import style from "../../assets/common.module.css";
-import Navigation from "../../components/navigation/Navigation";
 import img1 from "../../assets/img/img 1.jpg";
 import img2 from "../../assets/img/img 2.jpg";
 import img3 from "../../assets/img/img 3.jpg";
-import Properties from "../../components/properties/Properties";
 import Faq from "../../components/faq/Faq";
-import { propertiesData } from "./Properties";
-
+import Footer from "../../components/footer/Footer";
+import Navigation from "../../components/navigation/Navigation";
+import Properties from "../../components/properties/Properties";
 // pages
 import Metaverse from "../metaverse/Metaverse";
 import Roadmap from "../roadmap/Roadmap";
 import Team from "../team/Team";
-import Footer from "../../components/footer/Footer";
+import "./landing.css";
+import { propertiesData } from "./Properties";
+
+
 
 const Landing = () => {
   return (

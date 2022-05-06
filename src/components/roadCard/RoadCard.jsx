@@ -1,4 +1,6 @@
+import React from "react";
 import "./roadcard.css";
+
 
 const RoadCard = ({ data }) => {
   return (

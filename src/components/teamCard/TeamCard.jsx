@@ -1,5 +1,6 @@
+import React from "react";
 import "./teamcard.css";
-import img from "../../assets/img/dummy.jpg";
+
 
 const TeamCard = ({ data }) => {
   return (
