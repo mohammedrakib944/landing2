@@ -20,9 +20,11 @@
 .video-js {
   width: 100%;
   height: 99vh;
+  background-color: white;
 }
 .vjs-poster {
-  background-size: cover;
+  background-size: contain !important;
+  background-color: #fff !important;
 }
 .vjs-big-play-button {
   border: 1px dashed !important;
@@ -31,4 +33,9 @@
   .roadmapGrid {
     display: inherit;
   }
+  .video-js {
+  width: 100%;
+  height: 50vh;
+  background-color: white;
+}
 }

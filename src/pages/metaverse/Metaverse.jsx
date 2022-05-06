@@ -21,18 +21,18 @@ const Metaverse = () => {
         <div className="row">
           <div className="col-md-6">
             <div className="metaImgs">
-              <img src={imgB} className="metaImg MetaMainImg" />
-              <img
+              <img alt="" src={imgB} className="metaImg MetaMainImg" />
+              <img alt=""
                 src={img2}
                 className="metaImg"
                 onClick={() => setImgB(img14)}
               />
-              <img
+              <img alt=""
                 src={img3}
                 className="metaImg"
                 onClick={() => setImgB(img12)}
               />
-              <img
+              <img alt=""
                 src={img4}
                 className="metaImg"
                 onClick={() => setImgB(img13)}

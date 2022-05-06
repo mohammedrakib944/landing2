@@ -38,7 +38,7 @@ const Landing = () => {
               </div>
               <div className="downArrow">
                 <span>
-                  <i class="fa-solid fa-chevron-down"></i>
+                  <i className="fa-solid fa-chevron-down"></i>
                 </span>
               </div>
             </div>
@@ -87,9 +87,9 @@ const Landing = () => {
               </p>
             </div>
             <div className="aboutImages">
-              <img src={img1} className="aboutImage" />
-              <img src={img2} className="aboutImage" />
-              <img src={img3} className="aboutImage" />
+              <img alt="" src={img1} className="aboutImage" />
+              <img alt="" src={img2} className="aboutImage" />
+              <img alt="" src={img3} className="aboutImage" />
             </div>
             <p className="mt-4">Join The Lorem Ispum NFT</p>
             <button className={`${style.gradientBtn} mb-5`}>

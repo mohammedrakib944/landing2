@@ -1,12 +1,11 @@
-import "./properties.css";
-import img from "../../assets/img/dummy.jpg";
 import React from "react";
+import "./properties.css";
 
 
 const Properties = ({ data }) => {
   return (
     <div className="properties">
-      <img src={data.img} />
+      <img alt="" src={data.img} />
       <div className="titleAndTile">
         <p>{data.qu}</p>
         <p>{data.time}</p>

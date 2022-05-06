@@ -5,7 +5,7 @@ import "./teamcard.css";
 const TeamCard = ({ data }) => {
   return (
     <div className="teamCard">
-      <img src={data.img} />
+      <img alt="" src={data.img} />
       <h2>{data.title}</h2>
       <h5>{data.position}</h5>
 

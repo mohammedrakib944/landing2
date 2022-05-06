@@ -4,12 +4,11 @@ import { NavLink } from "react-router-dom";
 import style from "../../assets/common.module.css";
 import "./navigation.css";
 
-const provider = new ethers.providers.Web3Provider(window.ethereum)
-let signer
 
 const connectMetamask = async () => {
+  const provider = new ethers.providers.Web3Provider(window.ethereum)
   await provider.send("eth_requestAccounts", [])
-  signer = await provider.getSigner()
+  let signer = await provider.getSigner()
   const balance = await signer.getBalance()
   console.log("Account address:", await signer.getAddress())
   console.log("Account balance:", await ethers.utils.formatEther(balance))
@@ -33,7 +32,7 @@ const Navigation = () => {
           className="showMenuButton"
           onClick={() => setToggleNav("toggleNav")}
         >
-          <i class="fa-solid fa-bars"></i>
+          <i className="fa-solid fa-bars"></i>
         </button>
         <h3 className={`${style.gradientText} responseiveLogo`}>LOGO</h3>
       </div>

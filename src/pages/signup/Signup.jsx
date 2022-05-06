@@ -49,13 +49,13 @@ function Signup() {
 
                   <ul className="loginUl">
                     <li>
-                      <i class="fa-brands fa-facebook-f"></i>
+                      <i className="fa-brands fa-facebook-f"></i>
                     </li>
                     <li>
-                      <i class="fa-brands fa-linkedin-in"></i>
+                      <i className="fa-brands fa-linkedin-in"></i>
                     </li>
                     <li>
-                      <i class="fa-brands fa-google"></i>
+                      <i className="fa-brands fa-google"></i>
                     </li>
                   </ul>
                 </div>

@@ -35,11 +35,6 @@ const Roadmap = () => {
       {/* video section */}
       <br />
       <div className="videoImage">
-        {/* <img className="videoBG" src="" />
-        <div className="videoPlay">
-          <img src={videoCircle} />
-          <img className="videoTriangle" src={videoTriangle} />
-        </div> */}
         <VideoPlayer src={Video} poster={VideoPoster} />
       </div>
       <br />

@@ -7,7 +7,7 @@ const MetaCard = (props) => {
   return (
     <div className="metaCard">
       <h4 className="metaTitle">
-        <i class="fa-regular fa-circle"></i> <span>{data.title}</span>
+        <i className="fa-regular fa-circle"></i> <span>{data.title}</span>
       </h4>
       <p>{data.para}</p>
     </div>

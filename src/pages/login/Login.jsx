@@ -15,7 +15,7 @@ function Login() {
           <div className="row">
             <div className="col-md-6">
               <div className="LoginBG">
-                <img src={bg} alt="" />
+                <img alt="" src={bg} />
               </div>
             </div>
             <div className="col-md-6">
@@ -44,13 +44,13 @@ function Login() {
 
                   <ul className="loginUl">
                     <li>
-                      <i class="fa-brands fa-facebook-f"></i>
+                      <i className="fa-brands fa-facebook-f"></i>
                     </li>
                     <li>
-                      <i class="fa-brands fa-linkedin-in"></i>
+                      <i className="fa-brands fa-linkedin-in"></i>
                     </li>
                     <li>
-                      <i class="fa-brands fa-google"></i>
+                      <i className="fa-brands fa-google"></i>
                     </li>
                   </ul>
                 </div>
